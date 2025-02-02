@@ -10,7 +10,7 @@ It is intended for myself and other advanced users with good judgement.
 
 ## Instructions
 
-- You probably want Homebrew installed.
+- You probably want [Homebrew](https://brew.sh) installed.
 - Clone this repo.
 - Audit the `clean.sh` script, because you shouldn't run scripts you download 
 off the Internet blindly.
