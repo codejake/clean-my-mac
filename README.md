@@ -25,7 +25,7 @@ off the Internet blindly.
 
 ## NOT TODO
 - Stuff that isn't really documented by Apple and could have unintended results 
-at any given time. Eg. BootCache.playlist
+at any given time. Eg. messing with BootCache.playlist
 - kextcache rebuilds unless someone can convince me of pretty solid reasons with
 backing documentation.
 - update_dyld_shared_cache, because it was deprecated with macOS 11.
