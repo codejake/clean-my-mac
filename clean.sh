@@ -74,7 +74,7 @@ function update_app_store_apps() {
     echo -e "\nApp Store updates completed successfully"
 }
 
-#clean_homebrew
+clean_homebrew
 update_app_store_apps
 display_loginitems
 display_library_launch_stuff
