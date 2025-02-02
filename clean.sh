@@ -74,7 +74,32 @@ function update_app_store_apps() {
     echo -e "\nApp Store updates completed successfully"
 }
 
+function update_vscode_extensions() {
+    echo -e "\n[🔧] Task: Updating Visual Studio Code Extensions"
+    
+    # Check if code (Visual Studio Code CLI) is installed
+    if ! hash code 2>/dev/null; then
+        echo "Error: Visual Studio Code is not installed"
+        return 1
+    fi
+    
+    # Attempt to update Visual Studio Code extensions
+    if ! code --update-extensions; then
+        echo "Error: Failed to update Visual Studio Code extensions"
+        return 1
+    fi
+    
+    echo -e "\nVisual Studio Code extensions updated successfully"
+}
+
+#
+# Main
+#
+
+# The order matters.
+
 clean_homebrew
 update_app_store_apps
+update_vscode_extensions
 display_loginitems
 display_library_launch_stuff
