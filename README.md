@@ -1,9 +1,10 @@
 # My Mac Cleaner
 
-This is a work-in-progress script (or set of scripts) that aims to clean up 
+This is a work-in-progress script that aims to clean up 
 various first and third-party software on my Mac.
 
-It is targeted toward the latest release of macOS, which is currently Sequoia.
+It is targeted toward the latest release of macOS, which is currently macOS 15 
+Sequoia.
 
 It is intended for myself and other advanced users with good judgement.
 
@@ -11,8 +12,8 @@ It is intended for myself and other advanced users with good judgement.
 
 - You probably want Homebrew installed.
 - Clone this repo.
-- Audit the `clean.sh` script, because you shouldn't run scripts you download off the 
-Internet blindly.
+- Audit the `clean.sh` script, because you shouldn't run scripts you download 
+off the Internet blindly.
 - Comment out the functions you don't care about.
 - `chmod +x clean.sh`
 - `./clean.sh`
