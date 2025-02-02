@@ -19,6 +19,9 @@ off the Internet blindly.
 - `./clean.sh`
 
 ## TODO
+- Run Software Updates
+- Empty Trash
+- And more
 
 ## NOT TODO
 - Stuff that isn't really documented by Apple and could have unintended results 
