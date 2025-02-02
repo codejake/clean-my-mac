@@ -21,6 +21,8 @@ off the Internet blindly.
 ## TODO
 - Run Software Updates
 - Empty Trash
+- Look for old IPSWs
+- Check for Apple Intelligence status and space usage, but don't make changes.
 - And more
 
 ## NOT TODO
