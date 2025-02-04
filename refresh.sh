@@ -1,5 +1,8 @@
 #!/usr/bin/env bash
 
+#
+# Update and clean up Homebrew and its packages.
+#
 function clean_homebrew() {
     if hash brew 2>/dev/null; then
         echo -e "\n[🔧] Task: Cleaning Homebrew"
@@ -20,6 +23,9 @@ function clean_homebrew() {
     fi
 }
 
+#
+# Show the user the current login items.
+#
 function display_loginitems() {
     echo -e "\n[👀] Task: Showing Your Login Items"
     #osascript -e 'tell application "System Events" to get the name of every login item'
@@ -28,6 +34,9 @@ function display_loginitems() {
     echo ""
 }
 
+#
+# Show the user what's in /Library/LaunchAgents and /Library/LaunchDaemons.
+#
 function display_library_launch_stuff() {
     echo -e "\n[👀] Task: Showing /Library/LaunchAgents"
     ls -1 /Library/LaunchAgents
@@ -39,6 +48,9 @@ function display_library_launch_stuff() {
     echo ""
 }
 
+#
+# Show the user what's in ~/Library/LaunchAgents and ~/Library/LaunchDaemons.
+#
 function display_user_launch_stuff() {
     if [ ! -d ~/Library/LaunchAgents ]; then
         echo -e "[👀] Task: Showing ~/Library/LaunchAgents"
@@ -53,6 +65,9 @@ function display_user_launch_stuff() {
     fi
 }
 
+#
+# Use Homebrew to update all App Store apps.
+#
 function update_app_store_apps() {
     echo -e "\n[🔧] Task: Updating App Store Apps"
     
@@ -74,6 +89,9 @@ function update_app_store_apps() {
     echo -e "\nApp Store updates completed successfully"
 }
 
+#
+# Update Visual Studio Code extensions.
+#
 function update_vscode_extensions() {
     echo -e "\n[🔧] Task: Updating Visual Studio Code Extensions"
     
@@ -92,6 +110,9 @@ function update_vscode_extensions() {
     echo -e "\nVisual Studio Code extensions updated successfully"
 }
 
+#
+# Flush the DNS cache and restart mDNSResponder.
+#
 function refresh_dns() {
     echo -e "\n[🔧] Task: Flushing DNS cache and restarting mDNSResponder (asks for password)"
     sudo dscacheutil -flushcache && sudo killall -HUP mDNSResponder >/dev/null 2>/dev/null
