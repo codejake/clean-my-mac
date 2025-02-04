@@ -1,6 +1,6 @@
-# My Mac Cleaner
+# My Mac Refresher
 
-This is a work-in-progress script that aims to clean up 
+This is a work-in-progress script that aims to update and clean up 
 various first and third-party software on my Mac.
 
 It is targeted toward the latest release of macOS, which is currently macOS 15 
