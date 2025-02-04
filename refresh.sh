@@ -92,6 +92,11 @@ function update_vscode_extensions() {
     echo -e "\nVisual Studio Code extensions updated successfully"
 }
 
+function refresh_dns() {
+    echo -e "\n[🔧] Task: Flushing DNS cache and restarting mDNSResponder (asks for password)"
+    sudo dscacheutil -flushcache && sudo killall -HUP mDNSResponder >/dev/null 2>/dev/null
+}
+
 #
 # Main
 #
@@ -101,5 +106,6 @@ function update_vscode_extensions() {
 clean_homebrew
 update_app_store_apps
 update_vscode_extensions
+refresh_dns
 display_loginitems
 display_library_launch_stuff
